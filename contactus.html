@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrering</title>
+</head>
+
+<body>
+    <a href="index.html">Hem</a>
+    <a href="products.html">Produkter</a>
+    <a href="media.html">Filmer</a>
+    <a href="employees.html">Anställda</a>
+    <a href="contactus.html">Kontakta oss</a>
+    <br>
+    <h1>Kontakta oss</h1>
+
+    <form action="http://primat.se/services/sendform.aspx?xid=register&xmail=pinnen@lolmail.se" method="post">
+
+        <input type="radio" name="customer" value="private"> Privatperson<br>
+        <input type="radio" name="customer" value="company"> Företag<br>
+        <p>Storlek på företaget</p>
+        <input type="radio" name="company_size" value="small"> 1-100 anställda<br>
+        <input type="radio" name="company_size" value="medium"> 101-1000 anställda<br>
+        <input type="radio" name="company_size" value="large"> Mer än 1000 anställda<br>
+
+        <br>
+        <label for="name"></label>
+        <input type="text" id="name" name="name" placeholder="Ange ditt namn"><br>
+
+        <label for="address"></label>
+        <input type="text" id="address" name="address" placeholder="Ange din adress"><br>
+
+        <label for="email"></label>
+        <input type="email" id="email" name="email" placeholder="Ange din e-postadress"><br>
+
+        <label for="phone"></label>
+        <input type="tel" id="phone" name="phone" placeholder="Ange ditt telefonnummer"><br>
+
+        <br>
+        <label for="message"></label>
+        <textarea id="message" name="message" rows="5" cols="50" placeholder="Skriv ditt meddelande här"></textarea><br>
+
+        <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+        <label for="newsletter"> Jag vill prenumerera på nyhetsbrevet</label><br>
+        <input type="checkbox" id="contactbyphone" name="contactbyphone" value="yes">
+        <label for="contactbyphone">Jag vill bli kontaktad via telefon</label><br>
+
+        <br>
+        <input type="submit" value="Skicka">
+
+    </form>
+</body>
+
+</html>
