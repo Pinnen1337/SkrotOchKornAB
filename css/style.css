@@ -1,27 +1,107 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+div {
+    background-color: lightgray;
+    margin: 1px;
+    padding: 2px;
+}
+
+@media(min-width: 601px) {
+
+    header,
+    main,
+    footer {
+        display: flex;
+        flex-direction: row;
+
+    }
+}
+
+@media(max-width: 600px) {
+
+    header,
+    main,
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.center {
+    flex-basis: 50vw;
+}
+
+.rest1 {
+    flex: 1;
+}
+
+.rest2 {
+    flex: 2;
+}
+
+.rest5 {
+    flex: 5;
+}
+
+.rest5media {
+    background-image:url("/images/filmroll.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    flex: 5;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 5px;
+}
+
+.container>div {
+    background-color: #f1f1f1;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.searchbar {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.bild {
+    height: 30%;
+    width: 50%;
+    margin: 1em;
+}
+
+.floating {
+    float: left;
 }
 
 li {
     display: inline;
 }
 
-table{
+table {
     border-color: lightgreen;
 }
 
 h1 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
 }
 
-h3 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
 a {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: green;
     padding: 5px;
     text-decoration: none;
@@ -30,8 +110,9 @@ a {
     margin-right: 5px;
 }
 
-.menu{
+.menu {
     margin-top: 50px;
+    margin-left: 200px;
 }
 
 a:hover {
@@ -39,28 +120,14 @@ a:hover {
     color: white;
 }
 
-p {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
-}
-
 .productcolor {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: rgb(115, 15, 0);
-    
+    color: saddlebrown;
+
 }
 
-header{
-    height: 125px;
-    background-image: url('../images/rocks.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
-.mediabackground{
+.mediabackground {
     background-image: url('../images/filmroll.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
-
