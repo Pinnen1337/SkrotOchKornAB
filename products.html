@@ -14,25 +14,7 @@
             <img src="images/logo.png" alt="Bild på loggan" width="100">
         </div>
         <div class="center">
-            <nav class="menu">
-                <ul>
-                    <li>
-                        <a href="index.html">Hem</a>
-                    </li>
-                    <li>
-                        <a href="products.html">Produkter</a>
-                    </li>
-                    <li>
-                        <a href="media.html">Filmer</a>
-                    </li>
-                    <li>
-                        <a href="employees.html">Anställda</a>
-                    </li>
-                    <li>
-                        <a href="contactus.html">Kontakta oss</a>
-                    </li>
-                </ul>
-            </nav>
+            <ul id="menu"></ul>
         </div>
         <div class="rest1">
             <div class="searchbar">
@@ -49,7 +31,11 @@
             <h1>Produkter</h1>
             <h3>Grävmaskiner</h3>
             <div class="container">
-                <div><img src="images/excavator.jpg" alt="Bild på grävmaskin"></div>
+                <div>
+                    <img src="images/excavator.jpg" alt="Bild på grävmaskin">
+                    <input type="checkbox" id="buyexcavator" buyprice="1200000"> Köp
+                    <input type="checkbox" id="rentexcavator">Hyr
+                </div>
                 <div class="productcolor">
                     <table border="1">
                         <tr>
@@ -67,11 +53,17 @@
                             <td>300 hk</td>
                         </tr>
                     </table>
+
                 </div>
             </div>
             <h3>Lyftkranar</h3>
             <div class="container">
-                <div><img src="images/crane.jpg" alt="Bild på lyftkran"></div>
+                <div>
+                    <img src="images/crane.jpg" alt="Bild på lyftkran">
+                    <input type="checkbox" id="buycrane" buyprice="2500000"> Köp
+                    <input type="checkbox" id="rentcrane">Hyr
+                </div>
+
                 <div class="productcolor">
                     <table border="1">
                         <tr>
@@ -93,7 +85,11 @@
             </div>
             <h3>Lastbilar</h3>
             <div class="container">
-                <div><img src="images/truck.jpg" alt="Bild på lastbil"></div>
+                <div>
+                    <img src="images/truck.jpg" alt="Bild på lastbil">
+                    <input type="checkbox" id="buytruck" buyprice="1500000"> Köp
+                    <input type="checkbox" id="renttruck">Hyr
+                </div>
                 <div class="productcolor">
                     <table border="1">
                         <tr>
@@ -113,6 +109,8 @@
                     </table>
                 </div>
             </div>
+            <input type="button" value="Beräkna pris" onclick="calculateTotal()"><br>
+            <div><span id="price">0</span> kronor</div>
         </div>
         <div class="rest1">
             <p>HÄR<br><br>VISAS<br><br>DET<br><br>REKLAM<br><br>!!!!!</p>
@@ -126,6 +124,8 @@
             <p>&copy; 2025</p>
         </div>
     </footer>
+    <script src="script/menu.js"></script>
+    <script src="script/functions.js"></script>
 </body>
 
 </html>
